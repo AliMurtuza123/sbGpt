@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { ChatComponent } from './chat/chat';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [ChatComponent],
+  template: `<app-chat></app-chat>`
 })
-export class App {
-  protected title = 'fiance-chat';
-}
+export class AppComponent {}
